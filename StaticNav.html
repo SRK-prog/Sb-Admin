@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js" integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Static Navigation</title>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+  <div class="dashboard">Static Navigation</div>
+  <div class="dash"><a href="index.html" style="color: cornflowerblue;">Dashboard</a> / Static Navigation</div>
+
+  <div class="example-box">This page is an example of using static navigation. By removing the <code>.sb-nav-fixed</code> class from the <code>body</code> , the top navigation and side navigation will become static on scroll. Scroll down this page to see an example.</div>
+
+  <div style="height: 800px;"></div>
+
+  <div class="example-box">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div>
+
+  <div class="bottom">
+    <div>copyright © sbadmin website 2021</div>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Condition</a>
+    </div>
+  </div>
+</body>
+<script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+<body>
+  <div class="login">
+    <div class="login-title">Create Account
+
+    </div>
+    <form class="login-form">
+      <div class="input-box">
+        <input type="text" name="First name" placeholder="First name" aria-required="false">
+      </div>
+      <div class="input-box">
+        <input type="text" name="Last name" placeholder="Last name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" name="Email address" placeholder="Email address" required>
+      </div>
+      <div class="input-box">
+        <input type="password" name="Password" placeholder="New Password" required>
+      </div>
+      <div class="input-box">
+        <input type="password" name="Password" placeholder="Confirm Password" required>
+      </div>
+      
+      <div class="accountbtn">
+        <button class="login-btn">Confirm Account</button>
+      </div>
+      <div class="SignUp">
+        <a href="login.html">Have an account? Go to login</a>
+      </div>
+    </form>
+  </div>
+  <div class="block"><div>Login Successfully</div><a href="index.html
+  "><i class="fas fa-chevron-circle-left"></i> Back To Dashboard</a></div>
+
+  <div class="bottom" style="position: fixed; bottom: 0; z-index: -1;">
+    <div>copyright © sbadmin website 2021</div>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Condition</a>
+    </div>
+  </div>
+</body>
+<script>
+
+  const btn = document.querySelector("button");
+  
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('.login').style.display = 'none';
+    document.querySelector('.block').style.display = 'block';
+  });
+
+</script>
+</html>

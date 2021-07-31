@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nav</title>
+</head>
+<body>
+<nav>
+    <label class="tittle"><a href="/">SB ADMIN</a></label>
+    
+    <input class="searchbar" type="text" name="search" placeholder="Search for...">
+    <label class="fas fa-search searchbtn"></label> 
+
+    <!-- loginicon -->
+    <span class="user">
+        <input type="checkbox" id="logincheck" class="checklogin">
+        <label for="logincheck" class="fas fa-user"></label>
+        <label for="logincheck" class="fas fa-sort-down user-down"></label>
+        <ul>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Activity Log</a></li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+    </span>
+</nav>    
+<!-- menubar -->
+
+<div class="menubar">
+    <input type="checkbox" id="check" class="checkbar">
+      <label for="check" class="fas fa-bars checkbtn"></label>
+    <section>
+    <ul>
+      <li class="font-size">CORE</li>
+      <li ><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dash Board</a></li>
+      <li class="font-size">INTERFACE</li>
+      <li class="layout-items">
+        <input type="checkbox" id="layout" class="lay">
+          <label for="layout"><i class="fas fa-columns"></i> Layouts<i class="fas fa-angle-down downarrow"></i></label>
+        <ul>
+          <li><a href="StaticNav.html">Static  Navigation</a></li>
+          <li><a href="sidenav.html">Light Sidenav</a></li>
+        </ul>
+      </li>
+      <li class="page-items">
+        <input type="checkbox" id="page" class="pages">
+          <label for="page"><i class="fas fa-book-open"></i> Pages<i class="fas fa-angle-down downarrow-page"></i></label>
+        <summary>
+        <ul>
+          <li class="authentication">
+            <input type="checkbox" id="authen" class="authenticate">
+            <label for="authen">Authentication<i class="fas fa-angle-down downarrow-authen"></i></label>
+            <ul>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="register.html">Forgot Passord</a></li>
+            </ul>
+          </li>
+          <li class="error-items">
+            <input type="checkbox" id="Error" class="error">
+            <label for="Error">Error<i class="fas fa-angle-down downarrow-error"></i></label>
+            <ul>
+              <li><a href="error401.html">401 Page</a></li>
+              <li><a href="error404.html">404 Page</a></li>
+              <li><a href="error500.html">500 Page</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      </summary>
+      <li class="font-size">ADDONS</li>
+      <li><a href="chart.html"><i class="fas fa-chart-area"></i> Charts</a></li>
+      <li><a href="table.html"><i class="fas fa-table"></i> Tables</a></li>
+    </ul>
+  </section>
+  </div>
+</body>
+</html>

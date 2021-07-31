@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js" integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Charts</title>
+</head>
+<body>
+  <div id="nav-placeholder">
+  </div>
+  <div class="dashboard">Charts
+  </div>
+  <div class="dash"><a href="index.html" style="color: cornflowerblue;">Dashboard</a> / Charts </div>
+  <div class="example-box">Chart.js is a third party plugin that is used to generate the charts in this template. The charts below have been customized - for further customization options, please visit the official <a href="https://www.chartjs.org/docs/latest/" style="color: cornflowerblue;">Chart.js documentation</a>.</div>
+  <div>
+    <div class="chart-box-1">
+      <div class="chart-title-1"><i class="fas fa-chart-area"></i> Area Chart Example</div>
+      <canvas id="myChart" height="150" width="400"></canvas>
+      <!-- <div id="chart-div"></div> -->
+    </div>
+    <div class="chart-box-1">
+      <div class="chart-title-1"><i class="far fa-chart-bar"></i> Bar Chart Example</div>
+      <canvas id="chart" height="150" width="400"></canvas>
+    </div>
+    <!-- <div class="chart-box-1" >
+        <div class="chart-title-1"><i class="far fa-chart-bar"></i> Pie Chart Example</div>
+    
+     
+        <canvas id="chart_pie" height="100" width="700"></canvas>
+      </div>  -->
+  </div>  
+
+  <div class="bottom">
+    <div>copyright © sbadmin website 2021</div>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Condition</a>
+    </div>
+  </div>
+</body>
+<script src="js/chart.js"></script>
+<script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+</html>
