@@ -640,7 +640,10 @@ section {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-
+  .login {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
