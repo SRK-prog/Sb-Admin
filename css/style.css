@@ -201,7 +201,7 @@ section {
   display: block;
 }
 
-input:checked + label{
+#check:checked + label{
   -webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
   box-shadow: 0 0 3pt 2pt cornflowerblue;
 }
