@@ -41,8 +41,7 @@ nav {
 }
 
 .checkbtn:hover {
-  -webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
-          box-shadow: 0 0 3pt 2pt cornflowerblue;
+  color: #434548;
 }
 
 .searchbar {
@@ -200,6 +199,11 @@ section {
 
 #check:checked ~ section ul {
   display: block;
+}
+
+input:checked + label{
+  -webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
+  box-shadow: 0 0 3pt 2pt cornflowerblue;
 }
 
 #page {
