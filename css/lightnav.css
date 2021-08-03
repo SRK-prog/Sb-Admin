@@ -1,258 +1,277 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  nav {
+    background-color: #212429;
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .tittle {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 60px;
+  }
+  
+  .tittle a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .checkbtn {
+    color: #808285;
+    position: absolute;
+    padding: 8px;
+    border-radius: 3px;
+    top: -44px;
+    left: 15px;
+  }
+  
+  .checkbtn:hover {
+    color: #434548;
+  }
+  
+  .searchbar {
+    position: absolute;
+    right: 145px;
+    padding: 10px 20px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    border: none;
+  }
+  
+  .searchbar:focus {
+    -webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
+            box-shadow: 0 0 3pt 2pt cornflowerblue;
+  }
+  
+  .searchbtn {
+    top: 10px;
+    color: white;
+    background-color: #0d6efd;
+    position: absolute;
+    right: 100px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .searchbtn:hover {
+    -webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
+            box-shadow: 0 0 3pt 2pt cornflowerblue;
+  }
+  
+  .checkbar {
+    display: none;
+  }
+  
+  .checklogin {
+    display: none;
+  }
+  
+  .user {
+    color: #808285;
+    position: absolute;
+    right: 50px;
+  }
+  
+  .user ul {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 10px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 2pt #808285;
+            box-shadow: 0 0 2pt #808285;
+    list-style: none;
+    background-color: white;
+    display: none;
+  }
+  
+  .user ul li {
+    padding: 10px;
+  }
+  
+  .user ul a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .user ul a:hover {
+    color: #4e73df;
+  }
+  
+  #logincheck:checked ~ ul {
+    display: block;
+  }
+  
+  input:checked + label .icon {
+    transform: rotate(90deg);
+    transition: .5s;
+  }
+  
+  
+  .user:active {
+    color: #e4e2e2;
+  }
+  
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-y: auto;
+    height: 200vh;
+    max-height: 630px;
+    width: 230px;
+    background-color: #cacaca;
+    position: absolute;
+    left: -240px;
+    transition: .5s;
+  }
+  
+  .font-size {
+    font-size: .9rem;
+    font-weight: 500;
+  }
+  
+  .menubar {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    position: fixed;
+    line-height: 3rem;
+    top: 55px;
+    border-radius: 0 0 5px 0;
+  }
+  
+  .menubar ul {
+    list-style: none;
+    color: #292929;
+    padding-left: 2rem;
+  }
+  
+  .menubar a {
+    color: #292929;
+    text-decoration: none;
+  }
+  
+  .menubar a:hover {
+    color: #008ecc;
+  }
+  
+  #layout {
+    display: none;
+  }
+  
+  .layout-items:hover {
+    color: #008ecc;
+  }
+  
+  .layout-items ul li {
+    display: none;
+  }
+  
+  .downarrow {
+    transition: .5s;
+    margin-left: 70px;
+    
+  }
+  
+  .downarrow-page {
+    transition: .5s;
+    margin-left: 81px;
+  }
+  
+  .downarrow-authen {
+    transition: .5s;
+    margin-left: 15px;
+  }
+  
+  .downarrow-error {
+    transition: .5s;
+    margin-left: 84px;
+  }
+  
+  #layout:checked ~ ul li {
+    display: block;
+  }
+  
+  #check:checked ~ section {
+    left: 0;
+  }
+  
+  #check:checked + label{
+    -webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
+    box-shadow: 0 0 3pt 2pt cornflowerblue;
+  }
+  
+  #page {
+    display: none;
+  }
+  
+  .page-items:hover {
+    color: #008ecc;
+  }
+  
+  .page-items summary {
+    display: none;
+  }
+  
+  #page:checked ~ summary {
+    display: block;
+  }
+  
+  #page {
+    display: none;
+  }
+  
+  .authentication:hover {
+    color: #008ecc;
+  }
+  
+  .authentication ul li {
+    display: none;
+  }
+  
+  #authen:checked ~ ul li {
+    display: block;
+  }
+  
+  #authen {
+    display: none;
+  }
+  
+  .error-items :hover {
+    color: #008ecc;
+  }
+  
+  .error-items ul li {
+    display: none;
+  }
+  
+  #Error:checked ~ ul li {
+    display: block;
+  }
+  
+  #Error {
+    display: none;
+  }
 
-*{
--webkit-box-sizing: border-box;
-        box-sizing: border-box;
-margin: 0;
-padding: 0;
-scroll-behavior: smooth;
-}
-
-nav {
-background-color: #212429;
-height: 55px;
-width: 100%;
-position: fixed;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-align: center;
-    -ms-flex-align: center;
-        align-items: center;
-}
-
-.tittle {
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-color: white;
-font-size: 1.2rem;
-padding-left: 60px;
-}
-
-.tittle a {
-color: white;
-text-decoration: none;
-}
-
-.checkbtn {
-color: #808285;
-position: absolute;
-padding: 8px;
-border-radius: 3px;
-top: -42px;
-left: 15px;
-}
-
-.checkbtn:hover {
--webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
-        box-shadow: 0 0 3pt 2pt cornflowerblue;
-}
-
-.searchbar {
-position: absolute;
-right: 145px;
-padding: 10px 20px;
-border-radius: 4px 0 0 4px;
-outline: none;
-border: none;
-}
-
-.searchbar:focus {
--webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
-        box-shadow: 0 0 3pt 2pt cornflowerblue;
-}
-
-.searchbtn {
-top: 10px;
-color: white;
-background-color: #0d6efd;
-position: absolute;
-right: 100px;
-padding-top: 9px;
-padding-bottom: 10px;
-padding-right: 15px;
-padding-left: 15px;
-border-radius: 0 4px 4px 0;
-}
-
-.searchbtn:hover {
--webkit-box-shadow: 0 0 3pt 2pt cornflowerblue;
-        box-shadow: 0 0 3pt 2pt cornflowerblue;
-}
-
-.checkbar {
-display: none;
-}
-
-.checklogin {
-display: none;
-}
-
-.user {
-color: #808285;
-position: absolute;
-right: 50px;
-}
-
-.user ul {
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-padding: 10px;
-width: 150px;
-position: absolute;
-top: 20px;
-right: -30px;
-border-radius: 4px;
--webkit-box-shadow: 0 0 2pt #808285;
-        box-shadow: 0 0 2pt #808285;
-list-style: none;
-background-color: white;
-display: none;
-}
-
-.user ul li {
-padding: 10px;
-}
-
-.user ul a {
-text-decoration: none;
-color: black;
-}
-
-.user ul a:hover {
-color: #4e73df;
-}
-
-#logincheck:checked ~ ul {
-display: block;
-}
-
-.user:active {
-color: #575b5e;
-}
-
-section {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-overflow-y: auto;
-max-height: 620px;
-}
-
-.font-size {
-font-size: .9rem;
-font-weight: 500;
-}
-.menubar {
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-position: fixed;
-line-height: 3rem;
-top: 55px;
-width: 230px;
-background-color: #d3d3d3;
-border-radius: 0 0 5px 0;
-}
-
-.menubar ul {
-display: none;
-list-style: none;
-color: #212429;
-padding-left: 2rem;
-}
-
-.menubar a {
-color: #212429;
-text-decoration: none;
-}
-
-.menubar a:hover {
-color: #0d6efd;
-}
-
-#layout {
-display: none;
-}
-
-.layout-items:hover {
-color: #0d6efd;
-}
-
-.layout-items ul li {
-display: none;
-}
-
-.downarrow {
-padding-left: 70px;
-}
-
-.downarrow-page {
-padding-left: 81px;
-}
-
-.downarrow-authen {
-padding-left: 15px;
-}
-
-.downarrow-error {
-padding-left: 84px;
-}
-
-#layout:checked ~ ul li {
-display: block;
-}
-
-#check:checked ~ section ul {
-display: block;
-}
-
-#page {
-display: none;
-}
-
-.page-items:hover {
-color: #0d6efd;
-}
-
-.page-items summary {
-display: none;
-}
-
-#page:checked ~ summary {
-display: block;
-}
-
-#page {
-display: none;
-}
-
-.authentication:hover {
-color: #0d6efd;
-}
-
-.authentication ul li {
-display: none;
-}
-
-#authen:checked ~ ul li {
-display: block;
-}
-
-#authen {
-display: none;
-}
-
-.error-items :hover {
-color: #0d6efd;
-}
-
-.error-items ul li {
-display: none;
-}
-
-#Error:checked ~ ul li {
-display: block;
-}
-
-#Error {
-display: none;
-}
 
 .dashboard {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;

@@ -139,6 +139,7 @@ section {
   overflow-y: auto;
   height: 200vh;
   width: 230px;
+  max-height: 630px;
   background-color: #212429;
   position: absolute;
   left: -240px;
