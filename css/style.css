@@ -137,7 +137,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   overflow-y: auto;
-  height: 100hv;
+  height: 300hv;
   width: 230px;
   max-height: 630px;
   background-color: #212429;
